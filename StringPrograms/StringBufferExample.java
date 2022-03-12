@@ -17,15 +17,6 @@ public class StringBufferExample {
 		 */
 		
 		
-		System.out.println(s);		
-		s = s.concat(" Execution");
-		System.out.println(s);
-		
-		System.out.println(buff1);
-		buff1.append(5.14);
-		System.out.println(buff1);
-		
-		
 	}
 
 }

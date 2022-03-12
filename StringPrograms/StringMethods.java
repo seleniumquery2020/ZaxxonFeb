@@ -22,7 +22,7 @@ public class StringMethods {
 		compare = str.compareTo("Java program");
 		System.out.println("Result of Compare To = "+compare);
 
-		compare = str.compareToIgnoreCase("java program");
+		compare = str.compareToIgnoreCase("java m program");
 		System.out.println("Result of Compare To IgnoreCase = "+compare);
 		
 		System.out.println("String Message "+str);
@@ -30,7 +30,6 @@ public class StringMethods {
 		
 		String concatString = str.concat(str1);
 		System.out.println("Result of Concat Method = "+concatString);
-		
 		
 	}
 
