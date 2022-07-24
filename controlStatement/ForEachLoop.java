@@ -12,7 +12,8 @@ public class ForEachLoop {
 	   //}
 		
 		for(int a : arr ) {
-			System.out.print(a+"\n");
+			if(a%2 == 0)
+			   System.out.print(a+"\n");
 		}
 
 	}
