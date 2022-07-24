@@ -1,28 +1,31 @@
 package oopsConcept;
 
-public class Car extends Vehicle{
-	
-	public Car(){
-		System.out.println("Car Class execution started");
+public class Car extends Engine {
+
+	public Car() {
+		this(8);
+		System.out.println("Car Constructor");
 	}
-	
-	public void seats() {
-System.out.println("This is a personal car with only 2 seats");
+
+	public Car(int a) {
+		super("super");
+		System.out.println("Car Constructor with number as "+a);
+	}
+
+	@Override
+	public void power(String cc) {
+		super.power("150 cc");
+		System.out.println("Tentative Power = " + cc);
+		System.out.println("Actual power = 20 CC extra");
+	}
+
+	public static void wheel(int numberOfWheels) {
+		System.out.println("Number Car of wheels = " + numberOfWheels);
 	}
 
 	public static void main(String[] args) {
-		
 		Car car = new Car();
-		car.power("150 CC");
-		car.wheel(4);
-		car.seats();
-		
-		Vehicle vehicle = new Car();
-		vehicle.power("200 CC");
-		vehicle.wheel(6);
-		
-		Engine engine = new Car();
-		engine.power("250 cc");
-		
+
 	}
+
 }
